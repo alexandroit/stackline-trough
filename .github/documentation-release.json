@@ -4,7 +4,7 @@
     {
       "name": "@stackline/trough",
       "path": "readme.md",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "baselineVersion": "1.0.0",
       "keywords": [
         "stackline",
@@ -18,8 +18,8 @@
       "homepage": "https://alexandro.net/docs/vanilla/trough/",
       "baselineTarball": "https://registry.npmjs.org/@stackline/trough/-/trough-1.0.0.tgz",
       "baselineIntegrity": "sha512-cnKScGJb0c+r11AIFczTSQqG572z4Ee1FqzpSz8/lPJfvmmdCej7PRmWzKGD6zvxKwW1vOgyqcx8dIlCApZhFA==",
-      "expectedSha512": "8106f7fb8eaf27aa8b5b9e34ca171d32b552c0c9faaad2cb023fe94aba2361900ab1d12a0266fcc38bd3a2034a67a9b299425c3788aad2f80faf20ee463e84e3",
-      "tag": "docs-stackline-trough-v1.0.1"
+      "expectedSha512": "fad78017c4ea0eee79af48768ad7026436a03202fd38c8ffcec908703aeb2ec7cbc26b7a90557179e7504b48f9e8b72d7cd7cfed2ad8bf02980af95365302ebc",
+      "tag": "docs-stackline-trough-v1.0.2"
     }
   ]
 }
