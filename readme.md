@@ -1,3 +1,19 @@
+# @stackline/trough
+
+Independent maintenance fork of `trough@2.2.0`, preserving its API and published type declarations.
+
+```sh
+npm install @stackline/trough
+# Keep existing imports:
+npm install trough@npm:@stackline/trough@1.0.0
+```
+
+[Stackline](https://alexandro.net/) · [Issues](https://github.com/alexandroit/stackline-trough/issues) · [Community](https://www.reddit.com/r/Stackline/)
+
+See [UPSTREAM.md](UPSTREAM.md) for source identity and issue review, and [CHANGELOG.md](CHANGELOG.md) for maintenance changes. Functional tests also run against the final npm tarball; releases are published from GitHub Actions with provenance.
+
+## Upstream documentation
+
 # trough
 
 [![Build][badge-build-image]][badge-build-url]

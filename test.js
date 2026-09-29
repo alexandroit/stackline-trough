@@ -1,15 +1,15 @@
 /**
- * @typedef {import('trough').Callback} Callback
+ * @typedef {import('@stackline/trough').Callback} Callback
  */
 
 import assert from 'node:assert/strict'
 import process from 'node:process'
 import test from 'node:test'
-import {trough} from 'trough'
+import {trough} from '@stackline/trough'
 
 test('trough', async function (t) {
   await t.test('should expose the public api', async function () {
-    assert.deepEqual(Object.keys(await import('trough')).sort(), [
+    assert.deepEqual(Object.keys(await import('@stackline/trough')).sort(), [
       'trough',
       'wrap'
     ])

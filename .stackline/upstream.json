@@ -1,0 +1,24 @@
+{
+  "upstream": "trough",
+  "fork": "@stackline/trough",
+  "repository": "alexandroit/stackline-trough",
+  "upstreamRepository": "wooorm/trough",
+  "upstreamVersion": "2.2.0",
+  "sourceCommit": "f5b7dbf722a7df379d0247a6ab07bd41d0db376d",
+  "upstreamIntegrity": "sha512-tmMpK00BjZiUyVyvrBK7knerNgmgvcV/KLVyuma/SC+TQN167GrMRciANTz09+k3zW8L8t60jWO1GpfkZdjTaw==",
+  "status": "source-ready",
+  "files": {
+    "license": "6c03fd41cfd7c92d8aa8a2fa521b94b2683f059123281dcf921ddea9216b6254",
+    "index.js": "cd3300bc71f3f23850f8b583abb140c98c63072011482a270aab544085e41e00",
+    "lib/index.js": "a5a84b499ac99ebc3435fe0027de0b836cdbcb5c7413e525fd8e13f2aec5b1c2",
+    "package.json": "ced4e1e0914cb51aac812dee30936fa47b15286927180dd97c0e257f05f07e1e",
+    "index.d.ts.map": "9f61a3563a30b1748e2847b6de5290e1891aef8e04d7d593499d68090a6d0b4b",
+    "lib/index.d.ts.map": "9385b2e5fb88ed07178721f3b5141671969906b3382a9587e9a0d2ca65a87b12",
+    "readme.md": "04d443f3fd6a7871ea808af5161f44efccaffc35c9c502e8963299764e96e00c",
+    "index.d.ts": "40679431d96a6b45349e697e02c05bd2d73e814b2f9e06e961cca7b464ad71b6",
+    "lib/index.d.ts": "25e773f6ad5759ca8b0d0dc2b841ed248cf597e038e77f52e8060c4b6ca424eb"
+  },
+  "allowedRuntimeChanges": [],
+  "testCommand": "node --conditions development test.js",
+  "strategy": "Published upstream files, including generated declarations, are preserved and checked against SHA-256. Functional tests run against source and the extracted final package. Changes to published runtime files require an explicit reviewed allowlist."
+}
