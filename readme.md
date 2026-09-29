@@ -1,25 +1,51 @@
 # @stackline/trough
 
-Independent maintenance fork of `trough@2.2.0`, preserving its API and published type declarations.
+> `trough` is middleware.
 
-```sh
+[![npm version](https://img.shields.io/npm/v/@stackline/trough.svg?style=flat-square)](https://www.npmjs.com/package/@stackline/trough)
+[![license](https://img.shields.io/npm/l/@stackline/trough.svg?style=flat-square)](https://github.com/alexandroit/stackline-trough)
+[![GitHub repository](https://img.shields.io/badge/GitHub-alexandroit%2Fstackline-trough-181717?style=flat-square&logo=github)](https://github.com/alexandroit/stackline-trough)
+[![Docs](https://img.shields.io/badge/docs-alexandro.net-0f766e?style=flat-square)](https://alexandro.net/docs/vanilla/trough/)
+[![Reddit community](https://img.shields.io/badge/community-r%2FStackline-ff4500?style=flat-square&logo=reddit&logoColor=white)](https://www.reddit.com/r/Stackline/)
+
+**[Documentation](https://alexandro.net/docs/vanilla/trough/)** | **[npm](https://www.npmjs.com/package/@stackline/trough)** | **[Issues](https://github.com/alexandroit/stackline-trough/issues)** | **[Repository](https://github.com/alexandroit/stackline-trough)**
+
+**Current package version:** `1.0.1`
+
+---
+
+## Why this package?
+
+`@stackline/trough` is the Stackline-maintained distribution of `trough@2.2.0`. It is an independent continuation of [trough](https://github.com/wooorm/trough); original authors and licenses remain credited below.
+
+## Compatibility
+
+| Item | Value |
+| :--- | :--- |
+| Package | `@stackline/trough@1.0.1` |
+| API target | `trough@2.2.0` |
+| Supported Node.js | `See supported framework requirements` |
+| License | `MIT` |
+| Module type | `module` |
+| Types | `./index.d.ts` |
+| Runtime dependencies | `none` |
+
+## Installation
+
+```bash
 npm install @stackline/trough
-# Keep existing imports:
-npm install trough@npm:@stackline/trough@1.0.0
 ```
 
-[Stackline](https://alexandro.net/) · [Issues](https://github.com/alexandroit/stackline-trough/issues) · [Community](https://www.reddit.com/r/Stackline/)
+Preserve existing imports and plugin resolution with an npm alias:
 
-See [UPSTREAM.md](UPSTREAM.md) for source identity and issue review, and [CHANGELOG.md](CHANGELOG.md) for maintenance changes. Functional tests also run against the final npm tarball; releases are published from GitHub Actions with provenance.
+```bash
+npm install trough@npm:@stackline/trough
+```
 
-## Upstream documentation
+## Usage and API reference
 
-# trough
+### trough
 
-[![Build][badge-build-image]][badge-build-url]
-[![Coverage][badge-coverage-image]][badge-coverage-url]
-[![Downloads][badge-downloads-image]][badge-downloads-url]
-[![Size][badge-size-image]][badge-size-url]
 
 `trough` is middleware.
 
@@ -61,7 +87,7 @@ In Node.js (version 16+),
 install with [npm][npm-install]:
 
 ```sh
-npm install trough
+npm install @stackline/trough
 ```
 
 In Deno with [`esm.sh`][esm-sh]:
@@ -84,7 +110,7 @@ In browsers with [`esm.sh`][esm-sh]:
 import fs from 'node:fs'
 import path from 'node:path'
 import process from 'node:process'
-import {trough} from 'trough'
+import {trough} from '@stackline/trough'
 
 const pipeline = trough()
   .use(function (fileName) {
@@ -220,7 +246,7 @@ the first `input` of the next function is set to that value
 The following example shows how returning an error stops the pipeline:
 
 ```js
-import {trough} from 'trough'
+import {trough} from '@stackline/trough'
 
 trough()
   .use(function (thing) {
@@ -240,7 +266,7 @@ Error: Got: some value
 The following example shows how throwing an error stops the pipeline:
 
 ```js
-import {trough} from 'trough'
+import {trough} from '@stackline/trough'
 
 trough()
   .use(function (thing) {
@@ -260,7 +286,7 @@ Error: Got: more value
 The following example shows how the first output can be modified:
 
 ```js
-import {trough} from 'trough'
+import {trough} from '@stackline/trough'
 
 trough()
   .use(function (thing) {
@@ -289,7 +315,7 @@ is passed through).
 The following example shows how rejecting a promise stops the pipeline:
 
 ```js
-import {trough} from 'trough'
+import {trough} from '@stackline/trough'
 
 trough()
   .use(function (thing) {
@@ -309,7 +335,7 @@ Got: thing
 The following example shows how the input isn’t touched by resolving to `null`.
 
 ```js
-import {trough} from 'trough'
+import {trough} from '@stackline/trough'
 
 trough()
   .use(function () {
@@ -347,7 +373,7 @@ and all nullish values default to the `input`.
 The following example shows how passing a first argument stops the pipeline:
 
 ```js
-import {trough} from 'trough'
+import {trough} from '@stackline/trough'
 
 trough()
   .use(function (thing, next) {
@@ -366,7 +392,7 @@ Error: Got: thing
 The following example shows how more values than the input are passed.
 
 ```js
-import {trough} from 'trough'
+import {trough} from '@stackline/trough'
 
 trough()
   .use(function (thing, next) {
@@ -461,7 +487,7 @@ See [How to Contribute to Open Source][open-source-guide-contribute].
 
 [MIT][file-license] © [Titus Wormer][wooorm]
 
-<!-- Definitions -->
+
 
 [api-callback]: #callback
 
@@ -508,3 +534,22 @@ See [How to Contribute to Open Source][open-source-guide-contribute].
 [typescript]: https://www.typescriptlang.org
 
 [wooorm]: https://wooorm.com
+
+## Credits and original authors
+
+- Original project: [trough](https://github.com/wooorm/trough).
+- Titus Wormer.
+- Copyright (c) 2016 Titus Wormer <tituswormer@gmail.com>.
+- Stackline maintenance: [Alexandro Paixao Marques](https://www.linkedin.com/in/aleinfo/) and [Stackline contributors](https://github.com/alexandroit).
+
+Original copyright, license notices and contributor acknowledgements remain part of this distribution. Stackline maintenance does not replace authorship of the original work.
+
+## Community and Links
+
+- [Stackline website](https://alexandro.net/)
+- [GitHub projects](https://github.com/alexandroit)
+- [npm packages](https://www.npmjs.com/~alex360qc)
+- [Reddit community — r/Stackline](https://www.reddit.com/r/Stackline/)
+- [Maintainer LinkedIn](https://www.linkedin.com/in/aleinfo/)
+
+Use this repository's issue tracker for reproducible bugs and feature requests. Join r/Stackline for examples, usage questions and release discussions.
